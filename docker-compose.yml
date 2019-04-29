@@ -1,0 +1,9 @@
+version: "3"
+services:
+  php:
+    image: php:7.3-cli-alpine
+    volumes:
+      - ./source:/source
+    working_dir: /source
+    tty: true
+    command: sh
