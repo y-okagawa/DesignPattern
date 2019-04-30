@@ -3,7 +3,7 @@ services:
   php:
     image: php:7.3-cli-alpine
     volumes:
-      - ./source:/source
-    working_dir: /source
+      - ./:/designpattern
+    working_dir: /designpattern
     tty: true
     command: sh
