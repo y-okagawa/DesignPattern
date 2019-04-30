@@ -1,0 +1,21 @@
+@startuml
+
+Print<|..PrintBanner
+Banner<|--PrintBanner
+
+interface Print {
+  printWeak()
+  printStrong()
+}
+
+class PrintBanner {
+    printWeak()
+    printStrong()
+}
+
+class Banner {
+    showWithParen
+    showWithAster
+}
+
+@enduml
